@@ -1,0 +1,8 @@
+(setq sql-connection-alist
+      '((localhost (sql-product 'postgres)
+                                (sql-port 5432)
+                                (sql-server "localhost")
+                                (sql-user "postgres")
+                                (sql-database "postgres")
+                                (sql-password ""))
+        ))
