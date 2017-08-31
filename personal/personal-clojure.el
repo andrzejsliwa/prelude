@@ -51,19 +51,20 @@
 (add-hook 'cider-repl-mode-hook 'subword-mode)
 (add-hook 'cider-repl-mode-hook 'smartparens-mode)
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 
 (require 'clj-refactor)
-(add-hook 'clojure-mode-hook #'clj-refactor-mode)
-;; (defun my-clojure-mode-hook ()
-;;   (clj-refactor-mode 1)
-;;   (yas-minor-mode 1) ; for adding require/use/import
-;;   (cljr-add-keybindings-with-prefix "C-c r"))
+(defun my-clojure-mode-hook ()
+  (clj-refactor-mode 1)
+  (setq cljr-warn-on-eval nil)
+  (yas-minor-mode 1) ; for adding require/use/import
+  (cljr-add-keybindings-with-prefix "C-c C-m"))
 
-;; (eval-after-load 'clojure-mode
-;;   '(progn
-;;      (define-key clojure-mode-map (kbd "C-c C-h") #'clojure-cheatsheet)))
+(eval-after-load 'clojure-mode
+  '(progn
+     (define-key clojure-mode-map (kbd "C-c C-h") #'clojure-cheatsheet)))
 
-;; (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
+(add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
 
 ;; (defun tdd-test ()
 ;;   "Thin wrapper around `cider-test-run-tests'."
