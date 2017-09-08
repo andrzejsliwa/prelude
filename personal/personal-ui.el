@@ -30,13 +30,6 @@
 (set-cursor-color "#F92672")
 (setq-default cursor-type 'bar)
 
-(prelude-require-package 'sublimity)
-(require 'sublimity)
-;;(require 'sublimity-map)
-(require 'sublimity-scroll)
-;;(require 'sublimity-attractive)
-(sublimity-mode 1)
-
 (add-hook 'after-make-frame-functions
           '(lambda (frame)
              (modify-frame-parameters frame
