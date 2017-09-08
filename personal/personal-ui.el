@@ -14,6 +14,9 @@
         " - Emacs")
       )
 
+(set-fringe-mode '(nil . 0))
+(set-display-table-slot standard-display-table 0 ?\ )
+
 ;;(toggle-scroll-bar -1)
 (tool-bar-mode -1)
 (setq beacon-mode nil)
@@ -27,10 +30,12 @@
 (set-cursor-color "#F92672")
 (setq-default cursor-type 'bar)
 
-;; (prelude-require-package 'sublimity)
-;; (require 'sublimity)
-;; (require 'sublimity-scroll)
-;; (sublimity-mode 1)
+(prelude-require-package 'sublimity)
+(require 'sublimity)
+;;(require 'sublimity-map)
+(require 'sublimity-scroll)
+;;(require 'sublimity-attractive)
+(sublimity-mode 1)
 
 (add-hook 'after-make-frame-functions
           '(lambda (frame)

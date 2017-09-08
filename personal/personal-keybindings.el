@@ -31,12 +31,6 @@
 (global-set-key (kbd "C-=") 'increase-default-font-height)
 (global-set-key (kbd "C--") 'decrease-default-font-height)
 
-(global-set-key (kbd "s-d") 'helm-projectile-find-dir)
-(global-set-key (kbd "s-r") 'helm-recentf)
-(global-set-key (kbd "s-t") 'helm-projectile-find-file)
-(global-set-key (kbd "s-f") 'helm-projectile-ag)
-(global-set-key (kbd "s-p") 'helm-projectile-switch-project)
-
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
 
 (key-chord-define-global ";f" 'helm-projectile-find-file)
@@ -65,18 +59,6 @@
 (key-chord-define-global ";x" 'save-buffers-kill-terminal)
 (key-chord-unset-global "jk")
 (key-chord-define-global "jk" 'sr-speedbar-toggle)
-
-(global-set-key
- (kbd "C-c v")
- (lambda ()
-   (interactive)
-   (set-face-attribute 'default nil :font "C64 Pro Mono-14")))
-
-(global-set-key
- (kbd "C-c x")
- (lambda ()
-   (interactive)
-   (set-face-attribute 'default nil :font "Anonymous Pro-20")))
 
 (provide 'personal-keybindings)
 ;;; personal-keybindings.el ends here

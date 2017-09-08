@@ -31,8 +31,9 @@
 ;; Boston, MA 02110-1301, USA.
 
 ;;; Code:
-(prelude-require-packages '(alchemist elixir-mode flycheck-elixir))
+(prelude-require-packages '(alchemist elixir-mode flycheck-elixir flycheck-mix))
 (require 'elixir-mode)
+(require 'flycheck-mix)
 (require 'alchemist)
 
 (defun custom-erlang-mode-hook ()
