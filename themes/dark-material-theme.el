@@ -774,9 +774,9 @@ Also affects 'linum-mode' background."
 
    ;; font lock
    `(font-lock-builtin-face
-     ((,class (:foreground ,red
+     ((,class (:foreground ,cyan
                            :weight normal))
-      (,terminal-class (:foreground ,terminal-red
+      (,terminal-class (:foreground ,terminal-cyan
                                     :weight normal))))
 
    `(font-lock-comment-delimiter-face
@@ -812,8 +812,8 @@ Also affects 'linum-mode' background."
                                     :weight bold))))
 
    `(font-lock-preprocessor-face
-     ((,class (:foreground ,red))
-      (,terminal-class (:foreground ,terminal-red))))
+     ((,class (:foreground ,violet))
+      (,terminal-class (:foreground ,terminal-violet))))
 
    `(font-lock-regexp-grouping-construct
      ((,class (:foreground ,yellow
