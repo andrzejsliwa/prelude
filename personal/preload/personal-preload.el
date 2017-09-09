@@ -4,7 +4,7 @@
 
 (add-to-list 'custom-theme-load-path (expand-file-name "themes" prelude-dir))
 (toggle-debug-on-error t)
-(setq prelude-theme 'monokai)
+(setq prelude-theme 'dark-material)
 
 (setq exec-path-from-shell-check-startup-files nil)
 (if (memq window-system '(mac ns))
