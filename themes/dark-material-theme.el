@@ -5318,7 +5318,7 @@ Also affects 'linum-mode' background."
 
    `(elixir-atom-face
      ((,class (:foreground ,orange))
-      (,terminal-class (:foreground ,terminal-orange))))
+      (,terminal-class (:foreground ,terminal-orange-lc))))
 
    ;; yascroll
    `(yascroll:thumb-text-area
