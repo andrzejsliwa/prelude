@@ -36,12 +36,18 @@
 (require 'flycheck-mix)
 (require 'alchemist)
 
+(defun insert-and-indent-line-above ()
+  (interactive)
+  (move-end-of-line 1)
+  (newline-and-indent))
+
 (defun custom-erlang-mode-hook ()
   (define-key erlang-mode-map (kbd "M-,") 'alchemist-goto-jump-back))
 
 (add-hook 'erlang-mode-hook 'custom-erlang-mode-hook)
 
 (defun personal-elixir-mode-hook ()
+  (define-key elixir-mode-map (kbd "C-j") 'insert-and-indent-line-above)
   (alchemist-mode)
   (flycheck-mix-setup)
   (flycheck-mode))

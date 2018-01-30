@@ -6,7 +6,7 @@
 (toggle-debug-on-error t)
 (setq prelude-theme 'dark-material)
 
-(setq exec-path-from-shell-check-startup-files nil)
+:
 (if (memq window-system '(mac ns))
     (progn (toggle-scroll-bar -1)
            (setq ns-use-native-fullscreen nil)

@@ -32,7 +32,11 @@
             (set-face-background 'mode-line (if control-mode
                                                "#562aa6"
                                                nil
-                                             ))))
+                                               ))))
+
+(prelude-require-packages '(tldr))
+(require 'tldr)
+
 
 (provide 'personal-editor)
 ;;; personal-editor.el ends here

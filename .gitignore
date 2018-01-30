@@ -25,3 +25,4 @@ tramp
 network-security.data
 *.gpg
 /.cache/layouts/persp-auto-save
+secure-storage.el.gpg
