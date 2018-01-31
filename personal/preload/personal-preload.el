@@ -14,6 +14,9 @@
            (setq mac-option-modifier 'meta)
            (set-face-attribute 'default nil :font "Fira Code-18")))
 
+(custom-set-variables
+ '(helm-follow-mode-persistent t))
+
 ;; (when (window-system)
 ;;   (set-default-font "Fira Code"))
 ;; (let ((alist '((33 . ".\\(?:\\(?:==\\|!!\\)\\|[!=]\\)")

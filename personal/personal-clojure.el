@@ -52,6 +52,7 @@
 (add-hook 'cider-repl-mode-hook 'smartparens-mode)
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'clojure-mode-hook #'smartparens-strict-mode)
 
 (require 'clj-refactor)
 (defun my-clojure-mode-hook ()
