@@ -56,7 +56,7 @@
 ;; Nested prefixed namespaces.
 (define-key modalka-mode-map (kbd "c") mode-specific-map)
 (define-key modalka-mode-map (kbd "x") ctl-x-map)
-
+(modalka-define-kbd "SPC" "C-SPC")
 (modalka-define-kbd "cb" "C-c p b")
 (modalka-define-kbd "cd" "C-c p d")
 (modalka-define-kbd "cf" "C-c p f")
