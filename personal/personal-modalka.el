@@ -39,6 +39,8 @@
 (add-to-list 'modalka-excluded-modes 'dired-mode)
 (add-to-list 'modalka-excluded-modes 'magit-status-mode)
 (add-to-list 'modalka-excluded-modes 'magit-popup-mode)
+(add-to-list 'modalka-excluded-modes 'text-mode)
+(add-to-list 'modalka-excluded-modes 'term-mode)
 (add-to-list 'modalka-excluded-modes 'undo-tree-visualizer-mode)
 (add-to-list 'modalka-excluded-modes 'comint-mode)
 (add-to-list 'modalka-excluded-modes 'shell-mode)
@@ -75,8 +77,8 @@
 (modalka-define-kbd "8" "C-8")
 (modalka-define-kbd "9" "C-9")
 (modalka-define-kbd "0" "C-0")
-(modalka-define-kbd "-" "C--")
-(modalka-define-kbd "=" "C-=")
+(modalka-define-kbd "-" "M--")
+(modalka-define-kbd "=" "M-=")
 
 ;; First row shifted.
 (modalka-define-kbd "~" "C-~")
