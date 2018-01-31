@@ -50,6 +50,13 @@
 (add-to-list 'modalka-excluded-modes 'slime-repl-mode)
 (add-to-list 'modalka-excluded-modes 'cider-repl-mode)
 
+(add-hook 'modalka-mode-hook
+          (lambda ()
+            (set-face-background 'mode-line (if modalka-mode
+                                               "#562aa6"
+                                               nil
+                                               ))))
+
 (setq-default cursor-type '(bar . 1))
 (setq modalka-cursor-type 'box)
 

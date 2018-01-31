@@ -23,17 +23,6 @@
 ;; disable lockfiles
 (setq create-lockfiles  nil)
 
-(prelude-require-package 'control-mode)
-(require 'control-mode)
-(control-mode-default-setup)
-
-(add-hook 'control-mode-hook
-          (lambda ()
-            (set-face-background 'mode-line (if control-mode
-                                               "#562aa6"
-                                               nil
-                                               ))))
-
 (prelude-require-packages '(tldr))
 (require 'tldr)
 
