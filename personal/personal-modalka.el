@@ -61,6 +61,7 @@
 (modalka-define-kbd "cd" "C-c p d")
 (modalka-define-kbd "cf" "C-c p f")
 (modalka-define-kbd "ck" "C-c p k")
+(modalka-define-kbd "cj" "C-c M-j")
 (modalka-define-kbd "cp" "C-c p p")
 (modalka-define-kbd "rm" "C-x r m")
 (modalka-define-kbd "rb" "C-x r b")
@@ -126,10 +127,10 @@
 ;; Alphabet. Prefix keymaps `x' and `c' is an exception case.
 ;; `z' not used in Emacs.
 (modalka-define-kbd "a" "C-a")
-(modalka-define-kbd "b" "C-b")
-(modalka-define-kbd "d" "C-d")
+(modalka-define-kbd "b" "M-b")
+(modalka-define-kbd "d" "M-d")
 (modalka-define-kbd "e" "C-e")
-(modalka-define-kbd "f" "C-f")
+(modalka-define-kbd "f" "M-f")
 (modalka-define-kbd "g" "C-g")
 (modalka-define-kbd "h" "C-h")
 (modalka-define-kbd "i" "C-i")
