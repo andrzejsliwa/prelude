@@ -54,6 +54,9 @@
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
 
+(eval-after-load 'find-file-in-project
+  '(add-to-list 'ffip-patterns "*.clj"))
+
 (require 'clj-refactor)
 (defun my-clojure-mode-hook ()
   (clj-refactor-mode 1)
@@ -86,47 +89,47 @@
  '(cider-test-failure-face ((t (:foraground "#f92672" :background nil))))
  '(cider-test-success-face ((t (:foreground "#a6e22e" :background nil)))))
 
-;; (eval-after-load 'clojure-mode
-;;   (font-lock-add-keywords
-;;    'clojure-mode `(("(\\(fn\\)[\[[:space:]]"
-;;                     (0 (progn (compose-region (match-beginning 1)
-;;                                               (match-end 1) "λ")
-;;                               nil))))))
+ (eval-after-load 'clojure-mode
+   (font-lock-add-keywords
+    'clojure-mode `(("(\\(fn\\)[\[[:space:]]"
+                     (0 (progn (compose-region (match-beginning 1)
+                                               (match-end 1) "λ")
+                               nil))))))
 
-;; (eval-after-load 'clojure-mode
-;;   (font-lock-add-keywords
-;;    'clojurescript-mode `(("(\\(fn\\)[\[[:space:]]"
-;;                           (0 (progn (compose-region (match-beginning 1)
-;;                                                     (match-end 1) "λ")
-;;                                     nil))))))
+ (eval-after-load 'clojure-mode
+   (font-lock-add-keywords
+    'clojurescript-mode `(("(\\(fn\\)[\[[:space:]]"
+                           (0 (progn (compose-region (match-beginning 1)
+                                                     (match-end 1) "λ")
+                                     nil))))))
 
-;; (eval-after-load 'clojure-mode
-;;   '(font-lock-add-keywords
-;;     'clojure-mode `(("\\(#\\)("
-;;                      (0 (progn (compose-region (match-beginning 1)
-;;                                                (match-end 1) "ƒ")
-;;                                nil))))))
+ (eval-after-load 'clojure-mode
+   '(font-lock-add-keywords
+     'clojure-mode `(("\\(#\\)("
+                      (0 (progn (compose-region (match-beginning 1)
+                                                (match-end 1) "ƒ")
+                                nil))))))
 
-;; (eval-after-load 'clojure-mode
-;;   '(font-lock-add-keywords
-;;     'clojurescript-mode `(("\\(#\\)("
-;;                            (0 (progn (compose-region (match-beginning 1)
-;;                                                      (match-end 1) "ƒ")
-;;                                      nil))))))
+ (eval-after-load 'clojure-mode
+   '(font-lock-add-keywords
+     'clojurescript-mode `(("\\(#\\)("
+                            (0 (progn (compose-region (match-beginning 1)
+                                                      (match-end 1) "ƒ")
+                                      nil))))))
 
-;; (eval-after-load 'clojure-mode
-;;   '(font-lock-add-keywords
-;;     'clojure-mode `(("\\(#\\){"
-;;                      (0 (progn (compose-region (match-beginning 1)
-;;                                                (match-end 1) "∈")
-;;                                nil))))))
+ (eval-after-load 'clojure-mode
+   '(font-lock-add-keywords
+     'clojure-mode `(("\\(#\\){"
+                      (0 (progn (compose-region (match-beginning 1)
+                                                (match-end 1) "∈")
+                                nil))))))
 
-;; (eval-after-load 'clojure-mode
-;;   '(font-lock-add-keywords
-;;     'clojurescript-mode `(("\\(#\\){"
-;;                            (0 (progn (compose-region (match-beginning 1)
-;;                                                      (match-end 1) "∈")
-;;                                      nil))))))
+ (eval-after-load 'clojure-mode
+   '(font-lock-add-keywords
+     'clojurescript-mode `(("\\(#\\){"
+                            (0 (progn (compose-region (match-beginning 1)
+                                                      (match-end 1) "∈")
+                                      nil))))))
 
 (provide 'personal-clojure)
 ;;; personal-clojure.el ends here

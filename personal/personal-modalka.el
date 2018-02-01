@@ -36,7 +36,7 @@
 (global-set-key (kbd "<escape>") #'modalka-mode)
 (modalka-global-mode 1)
 
-(add-to-list 'modalka-excluded-modes 'dired-mode)
+;;(add-to-list 'modalka-excluded-modes 'dired-mode)
 (add-to-list 'modalka-excluded-modes 'magit-status-mode)
 (add-to-list 'modalka-excluded-modes 'magit-popup-mode)
 (add-to-list 'modalka-excluded-modes 'text-mode)

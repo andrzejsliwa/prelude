@@ -18,13 +18,15 @@
 (set-display-table-slot standard-display-table 0 ?\ )
 
 ;;(toggle-scroll-bar -1)
+;;(mac-toggle-tab-bar -1)
 (tool-bar-mode -1)
 (setq beacon-mode nil)
 (blink-cursor-mode 1)
-(prelude-require-package 'symon)
-(require 'symon)
-(setq symon-sparkline-type 'plain)
-(symon-mode 1)
+
+;;(prelude-require-package 'symon)
+;;(require 'symon)
+;;(setq symon-sparkline-type 'plain)
+;;(symon-mode 1)
 
 (setq cursor-in-non-selected-windows nil)
 (set-cursor-color "#F92672")
