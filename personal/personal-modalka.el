@@ -72,6 +72,7 @@
 (modalka-define-kbd "cp" "C-c p p")
 (modalka-define-kbd "rm" "C-x r m")
 (modalka-define-kbd "rb" "C-x r b")
+(modalka-define-kbd "xs" "C-x C-s")
 
 ;; First row.
 (modalka-define-kbd "`" "C-`")

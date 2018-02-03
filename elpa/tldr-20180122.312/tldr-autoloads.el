@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "tldr" "tldr.el" (23152 20328 483852 929000))
+;;;### (autoloads nil "tldr" "tldr.el" (23155 33 365942 628000))
 ;;; Generated autoloads from tldr.el
 
 (autoload 'tldr-update-docs "tldr" "\

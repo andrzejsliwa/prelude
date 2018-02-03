@@ -66,6 +66,7 @@
 
 (eval-after-load 'clojure-mode
   '(progn
+     (define-key clojure-mode-map (kbd "C-c C-n") #'cider-pprint-eval-last-sexp-to-comment)
      (define-key clojure-mode-map (kbd "C-c C-h") #'clojure-cheatsheet)))
 
 (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
@@ -89,47 +90,47 @@
  '(cider-test-failure-face ((t (:foraground "#f92672" :background nil))))
  '(cider-test-success-face ((t (:foreground "#a6e22e" :background nil)))))
 
- (eval-after-load 'clojure-mode
-   (font-lock-add-keywords
-    'clojure-mode `(("(\\(fn\\)[\[[:space:]]"
+(eval-after-load 'clojure-mode
+  (font-lock-add-keywords
+   'clojure-mode `(("(\\(fn\\)[\[[:space:]]"
+                    (0 (progn (compose-region (match-beginning 1)
+                                              (match-end 1) "λ")
+                              nil))))))
+
+(eval-after-load 'clojure-mode
+  (font-lock-add-keywords
+   'clojurescript-mode `(("(\\(fn\\)[\[[:space:]]"
+                          (0 (progn (compose-region (match-beginning 1)
+                                                    (match-end 1) "λ")
+                                    nil))))))
+
+(eval-after-load 'clojure-mode
+  '(font-lock-add-keywords
+    'clojure-mode `(("\\(#\\)("
                      (0 (progn (compose-region (match-beginning 1)
-                                               (match-end 1) "λ")
+                                               (match-end 1) "ƒ")
                                nil))))))
 
- (eval-after-load 'clojure-mode
-   (font-lock-add-keywords
-    'clojurescript-mode `(("(\\(fn\\)[\[[:space:]]"
+(eval-after-load 'clojure-mode
+  '(font-lock-add-keywords
+    'clojurescript-mode `(("\\(#\\)("
                            (0 (progn (compose-region (match-beginning 1)
-                                                     (match-end 1) "λ")
+                                                     (match-end 1) "ƒ")
                                      nil))))))
 
- (eval-after-load 'clojure-mode
-   '(font-lock-add-keywords
-     'clojure-mode `(("\\(#\\)("
-                      (0 (progn (compose-region (match-beginning 1)
-                                                (match-end 1) "ƒ")
-                                nil))))))
+(eval-after-load 'clojure-mode
+  '(font-lock-add-keywords
+    'clojure-mode `(("\\(#\\){"
+                     (0 (progn (compose-region (match-beginning 1)
+                                               (match-end 1) "∈")
+                               nil))))))
 
- (eval-after-load 'clojure-mode
-   '(font-lock-add-keywords
-     'clojurescript-mode `(("\\(#\\)("
-                            (0 (progn (compose-region (match-beginning 1)
-                                                      (match-end 1) "ƒ")
-                                      nil))))))
-
- (eval-after-load 'clojure-mode
-   '(font-lock-add-keywords
-     'clojure-mode `(("\\(#\\){"
-                      (0 (progn (compose-region (match-beginning 1)
-                                                (match-end 1) "∈")
-                                nil))))))
-
- (eval-after-load 'clojure-mode
-   '(font-lock-add-keywords
-     'clojurescript-mode `(("\\(#\\){"
-                            (0 (progn (compose-region (match-beginning 1)
-                                                      (match-end 1) "∈")
-                                      nil))))))
+(eval-after-load 'clojure-mode
+  '(font-lock-add-keywords
+    'clojurescript-mode `(("\\(#\\){"
+                           (0 (progn (compose-region (match-beginning 1)
+                                                     (match-end 1) "∈")
+                                     nil))))))
 
 (provide 'personal-clojure)
 ;;; personal-clojure.el ends here

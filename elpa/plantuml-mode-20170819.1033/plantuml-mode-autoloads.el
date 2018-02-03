@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "plantuml-mode" "plantuml-mode.el" (22963 3810
-;;;;;;  0 0))
+;;;### (autoloads nil "plantuml-mode" "plantuml-mode.el" (23155 43
+;;;;;;  323153 533000))
 ;;; Generated autoloads from plantuml-mode.el
 
 (add-to-list 'auto-mode-alist '("\\.\\(plantuml\\|pum\\|plu\\)\\'" . plantuml-mode))

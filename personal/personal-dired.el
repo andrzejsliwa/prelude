@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(prelude-require-packages '(dired-details))
+;; (prelude-require-packages '(dired-details))
 
 ;; enable dired-details extension
 (require 'dired-details)

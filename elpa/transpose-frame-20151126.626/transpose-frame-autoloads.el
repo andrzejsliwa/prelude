@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "transpose-frame" "transpose-frame.el" (22963
-;;;;;;  3820 0 0))
+;;;### (autoloads nil "transpose-frame" "transpose-frame.el" (23155
+;;;;;;  50 518551 25000))
 ;;; Generated autoloads from transpose-frame.el
 
 (autoload 'transpose-frame "transpose-frame" "\

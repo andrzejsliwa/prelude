@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "zoom-window" "zoom-window.el" (22963 3822
-;;;;;;  0 0))
+;;;### (autoloads nil "zoom-window" "zoom-window.el" (23155 51 5506
+;;;;;;  467000))
 ;;; Generated autoloads from zoom-window.el
 
 (autoload 'zoom-window-setup "zoom-window" "\

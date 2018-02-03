@@ -4,7 +4,7 @@
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
 ;;;### (autoloads nil "project-persist-drawer" "project-persist-drawer.el"
-;;;;;;  (22963 3797 0 0))
+;;;;;;  (23155 31 526262 24000))
 ;;; Generated autoloads from project-persist-drawer.el
 
 (defvar project-persist-drawer-mode nil "\
@@ -24,8 +24,8 @@ Use a project drawer with project-persist.
 
 ;;;***
 
-;;;### (autoloads nil nil ("project-persist-drawer-pkg.el") (22963
-;;;;;;  3797 0 0))
+;;;### (autoloads nil nil ("project-persist-drawer-pkg.el") (23155
+;;;;;;  31 517948 277000))
 
 ;;;***
 
