@@ -8,8 +8,8 @@
                             clj-refactor
                             clojure-cheatsheet
                             cider-decompile))
-(dolist (r '("\\.cljs$" "\\.cljx$" "\\.edn$"))
-  (add-to-list 'auto-mode-alist (cons r 'clojure-mode)))
+;(dolist (r '("\\.cljs$" "\\.cljx$" "\\.edn$"))
+;  (add-to-list 'auto-mode-alist (cons r 'clojure-mode)))
 
 ;; cider
 (require 'cider)
