@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "move-text" "move-text.el" (23154 65159 25935
-;;;;;;  2000))
+;;;### (autoloads nil "move-text" "move-text.el" (23164 42263 97205
+;;;;;;  715000))
 ;;; Generated autoloads from move-text.el
 
 (autoload 'move-text--total-lines "move-text" "\

@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "crux" "crux.el" (23154 65132 345067 224000))
+;;;### (autoloads nil "crux" "crux.el" (23164 42232 712842 97000))
 ;;; Generated autoloads from crux.el
 
 (autoload 'crux-open-with "crux" "\

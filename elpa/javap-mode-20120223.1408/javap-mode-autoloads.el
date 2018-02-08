@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "javap-mode" "javap-mode.el" (23154 65215 31143
-;;;;;;  623000))
+;;;### (autoloads nil "javap-mode" "javap-mode.el" (23164 42316 841873
+;;;;;;  881000))
 ;;; Generated autoloads from javap-mode.el
 
 (autoload 'javap-mode "javap-mode" "\

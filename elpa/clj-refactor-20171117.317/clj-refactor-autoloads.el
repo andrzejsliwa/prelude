@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "clj-refactor" "clj-refactor.el" (23154 65213
-;;;;;;  18427 229000))
+;;;### (autoloads nil "clj-refactor" "clj-refactor.el" (23164 42307
+;;;;;;  834458 354000))
 ;;; Generated autoloads from clj-refactor.el
 
 (autoload 'cljr-add-keybindings-with-prefix "clj-refactor" "\
@@ -333,7 +333,7 @@ A mode to keep the clj-refactor keybindings.
 ;;;***
 
 ;;;### (autoloads nil nil ("clj-refactor-compat.el" "clj-refactor-pkg.el")
-;;;;;;  (23154 65213 21379 963000))
+;;;;;;  (23164 42307 837179 320000))
 
 ;;;***
 

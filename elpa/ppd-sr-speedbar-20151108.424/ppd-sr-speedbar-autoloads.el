@@ -4,7 +4,7 @@
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
 ;;;### (autoloads nil nil ("ppd-sr-speedbar-pkg.el" "ppd-sr-speedbar.el")
-;;;;;;  (23155 32 758227 817000))
+;;;;;;  (23164 42320 637815 324000))
 
 ;;;***
 

@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "project-persist" "project-persist.el" (23155
-;;;;;;  30 952876 228000))
+;;;### (autoloads nil "project-persist" "project-persist.el" (23164
+;;;;;;  42318 657175 653000))
 ;;; Generated autoloads from project-persist.el
 
 (defvar project-persist-mode nil "\
@@ -24,8 +24,8 @@ A minor mode to allow loading and saving of project settings.
 
 ;;;***
 
-;;;### (autoloads nil nil ("project-persist-pkg.el") (23155 30 950266
-;;;;;;  621000))
+;;;### (autoloads nil nil ("project-persist-pkg.el") (23164 42318
+;;;;;;  652353 404000))
 
 ;;;***
 

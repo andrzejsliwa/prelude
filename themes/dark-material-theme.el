@@ -1251,6 +1251,14 @@ Also affects 'linum-mode' background."
                                     :weight bold))))
 
 
+   `(clojure-keyword-faceF78C6C
+     ((,class (:foreground "#F78C6C"
+                           :weight bold
+                           ))
+      (,terminal-class (:foreground ,terminal-orange
+                                    :weight bold
+                                    ))))
+
    ;; clojure-test-mode
    `(clojure-test-failure-face
      ((,class (:foreground ,orange
@@ -5124,10 +5132,10 @@ Also affects 'linum-mode' background."
 
    `(whitespace-line
      ((,class (:background unspecified
-                           :foreground ,magenta
+                           :foreground ,violet-d
                            :inverse-video unspecified))
       (,terminal-class (:background unspecified
-                                    :foreground ,terminal-magenta
+                                    :foreground ,terminal-violet-d
                                     :inverse-video unspecified))))
 
    `(whitespace-space-before-tab

@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "zop-to-char" "zop-to-char.el" (23154 65167
-;;;;;;  137743 285000))
+;;;### (autoloads nil "zop-to-char" "zop-to-char.el" (23164 42272
+;;;;;;  412481 784000))
 ;;; Generated autoloads from zop-to-char.el
 
 (autoload 'zop-to-char "zop-to-char" "\

@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "cider-decompile" "cider-decompile.el" (23154
-;;;;;;  65215 514940 250000))
+;;;### (autoloads nil "cider-decompile" "cider-decompile.el" (23164
+;;;;;;  42317 360968 639000))
 ;;; Generated autoloads from cider-decompile.el
 
 (autoload 'cider-decompile-func "cider-decompile" "\

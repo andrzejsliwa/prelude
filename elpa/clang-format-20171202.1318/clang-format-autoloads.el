@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "clang-format" "clang-format.el" (23155 36
-;;;;;;  35669 45000))
+;;;### (autoloads nil "clang-format" "clang-format.el" (23164 42331
+;;;;;;  599214 168000))
 ;;; Generated autoloads from clang-format.el
 
 (autoload 'clang-format-region "clang-format" "\
