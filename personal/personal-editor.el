@@ -26,6 +26,15 @@
 (prelude-require-packages '(tldr))
 (require 'tldr)
 
+(prelude-require-packages '(ag))
+(setq ag-highlight-search t)
+(add-hook 'ag-mode-hook
+          (lambda ()
+            (next-error-follow-minor-mode 1)))
+
+(add-hook 'ag-search-finished-hook
+          (lambda ()
+            (other-window 1)))
 
 (provide 'personal-editor)
 ;;; personal-editor.el ends here
