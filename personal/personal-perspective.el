@@ -12,7 +12,7 @@
 (require 'perspective)
 (require 'persp-projectile)
 
-(setq persp-initial-frame-name "none")
+;;(setq persp-initial-frame-name "none")
 (persp-mode)
 (global-set-key (kbd "M-q") 'persp-next)
 

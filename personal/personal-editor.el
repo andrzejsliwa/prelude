@@ -13,8 +13,8 @@
 
 (global-hl-line-mode -1)
 
-;; enable guru mode
-(setq guru-warn-only nil)
+;; disable guru mode
+(setq prelude-guru nil)
 
 ;; default tab width
 (setq-default tab-width 4)
