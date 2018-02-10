@@ -13,6 +13,7 @@
            (setq mac-option-modifier 'meta)
            (set-face-attribute 'default nil :font "Fira Code-18")))
 
+(set-language-environment "UTF-8")
 ;(mac-toggle-tab-bar)
 (mac-auto-operator-composition-mode t)
 (custom-set-variables

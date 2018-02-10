@@ -13,35 +13,20 @@
 
 ;; cider
 (require 'cider)
-(require 'clojure-mode-extra-font-locking)
 
-;; (setq cider-repl-popup-stacktraces nil)
-;; (setq cider-test-show-report-on-success t)
-;; (setq cider-auto-select-error-buffer t)
-;; (setq cider-repl-display-help-banner nil)
-
+(setq cider-repl-result-prefix ";; => ")
+(setq cider-repl-pop-to-buffer-on-connect 'display-only)
+(setq cider-prompt-for-symbol nil)
+(setq cider-repl-use-pretty-printing t)
+(setq cider-repl-print-length 50)
+(setq cider-repl-wrap-history t)
+(setq cider-repl-history-size 3000)
 (setq cider-repl-history-file "~/.cider-history")
+(setq cider-repl-display-help-banner nil)
 
-;; nice pretty printing
-;; (setq cider-repl-use-pretty-printing t)
-
-;; nicer font lock in REPL
-;; (setq cider-repl-use-clojure-font-lock t)
-
-;; result prefix for the REPL
-;; (setq cider-repl-result-prefix ";; => ")
-
-;; never ending REPL history
-;; (setq cider-repl-wrap-history t)
-
-;; looong history
-;; (setq cider-repl-history-size 3000)
-
-;; eldoc for clojure
-;; (add-hook 'cider-mode-hook #'eldoc-mode)
-
-;; error buffer not popping up
-;; (setq cider-show-error-buffer t)
+(add-hook 'cider-repl-mode-hook #'eldoc-mode)
+(define-key cider-repl-mode-map (kbd "RET") #'cider-repl-newline-and-indent)
+(define-key cider-repl-mode-map (kbd "C-<return>") #'cider-repl-return)
 
 ;; company mode for completion
 (add-hook 'cider-repl-mode-hook #'company-mode)
@@ -54,8 +39,8 @@
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
 
-(eval-after-load 'find-file-in-project
-  '(add-to-list 'ffip-patterns "*.clj"))
+;(eval-after-load 'find-file-in-project
+;  '(add-to-list 'ffip-patterns "*.clj"))
 
 (require 'clj-refactor)
 (defun my-clojure-mode-hook ()
