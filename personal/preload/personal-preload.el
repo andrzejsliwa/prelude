@@ -3,7 +3,7 @@
 ;;; Code:
 
 (add-to-list 'custom-theme-load-path (expand-file-name "themes" prelude-dir))
-;(toggle-debug-on-error t)
+(toggle-debug-on-error nil)
 (setq prelude-theme 'dark-material)
 
 (if (memq window-system '(mac ns))
@@ -11,11 +11,11 @@
            (setq ns-use-native-fullscreen nil)
            (setq mac-command-modifier 'super)
            (setq mac-option-modifier 'meta)
-           (set-face-attribute 'default nil :font "Fira Code-18")))
+           (set-face-attribute 'default nil :font "Anonymous Pro-20")))
 
 (set-language-environment "UTF-8")
-;(mac-toggle-tab-bar)
-(mac-auto-operator-composition-mode t)
+;;(mac-toggle-tab-bar)
+;;(mac-auto-operator-composition-mode t)
 (custom-set-variables
  '(helm-follow-mode-persistent t))
 

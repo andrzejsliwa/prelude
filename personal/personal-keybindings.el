@@ -60,5 +60,7 @@
 ;; (key-chord-unset-global "jk")
 ;; (key-chord-define-global "jk" 'sr-speedbar-toggle)
 
+(mapc 'global-unset-key '([left] [right] [up] [down]))
+
 (provide 'personal-keybindings)
 ;;; personal-keybindings.el ends here

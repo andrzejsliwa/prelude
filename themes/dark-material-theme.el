@@ -5089,7 +5089,7 @@ Also affects 'linum-mode' background."
    `(whitespace-space
      ((,class (:background unspecified
                            :foreground ,dark-material-comments
-                           :inverse-video unspecified
+                          :inverse-video unspecified
                            :slant italic))
       (,terminal-class (:background unspecified
                                     :foreground ,terminal-dark-material-comments
@@ -5132,10 +5132,10 @@ Also affects 'linum-mode' background."
 
    `(whitespace-line
      ((,class (:background unspecified
-                           :foreground ,violet-d
+                           :foreground ,magenta
                            :inverse-video unspecified))
       (,terminal-class (:background unspecified
-                                    :foreground ,terminal-violet-d
+                                    :foreground ,terminal-magenta
                                     :inverse-video unspecified))))
 
    `(whitespace-space-before-tab
